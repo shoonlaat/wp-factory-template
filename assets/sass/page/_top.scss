@@ -1,0 +1,841 @@
+/* ========================================================
+ styles for front page
+======================================================== */
+
+.inner {
+  @include mq(sp) {
+    padding: 0 2rem;
+  }
+
+  @include mq() {
+    width: 95%;
+    margin: 0 auto;
+  }
+}
+
+.mainvisual {
+  @include mq(sp) {
+    position: relative;
+    padding-bottom: 10rem;
+    background: url(#{$v-img-path}top/img_mv_bg_sp.png) no-repeat right center/cover;
+  }
+
+  @include mq() {
+    background: url(#{$v-img-path}top/img_mv_bg.png) no-repeat right center/cover;
+  }
+
+  .inner {
+    @include mq() {
+      position: relative;
+      padding: 5.3rem 1.4rem 4rem 1.4rem;
+      max-width: 172rem;
+    }
+  }
+
+  .mv-txt {
+    display: flex;
+
+    @include mq(sp) {
+      flex-direction: column-reverse;
+    }
+
+    .img-blk {
+      @include mq(sp) {
+        width: 10.5rem;
+        margin-left: 2.4rem;
+
+        img {
+          height: auto;
+          max-width: 100%;
+        }
+      }
+    }
+  }
+
+  .mv-title {
+    font-weight: 600;
+    text-transform: uppercase;
+
+    @include mq(sp) {
+      line-height: 1.8;
+      padding: 3.3rem 0.4rem 1.1rem 0.4rem;
+      font-size: 2.5rem;
+      text-align: center;
+      letter-spacing: 1.45px;
+    }
+
+    @include mq() {
+      line-height: 1.5;
+      padding: 10rem 1.5rem 1rem 1.5rem;
+      font-size: 4rem;
+    }
+
+    .redem {
+      color: $color03;
+    }
+  }
+
+  .btn-gp {
+    @include mq(sp) {
+      position: absolute;
+      right: 0;
+      bottom: 2.3rem;
+      left: 0;
+      justify-content: center;
+      width: 93%;
+      margin: 0 auto;
+    }
+
+    @include mq() {
+      width: 41rem;
+      margin-left: 17rem;
+    }
+
+    a {
+      font-weight: 600;
+      text-align: center;
+
+      @include mq(sp) {
+        width: 16rem;
+        margin-right: 2.2rem;
+        padding: 1.5rem 0;
+        font-size: 1.6rem;
+
+        &:last-of-type {
+          margin-right: 0;
+        }
+      }
+
+      @include mq() {
+        width: 20rem;
+        padding: 2rem 0;
+        font-size: 1.8rem;
+      }
+    }
+  }
+
+  .txt-blk {
+    display: flex;
+    line-height: 2;
+    font-weight: 400;
+
+    @include mq(sp) {
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+      font-size: 1.1rem;
+      text-align: right;
+    }
+
+    @include mq() {
+      justify-content: space-between;
+      align-items: center;
+      padding: 7rem 21rem 0 19rem;
+      font-size: 1.3rem;
+    }
+  }
+
+  .probabo-txt {
+    @include mq(sp) {
+      padding: 4rem 1.5rem;
+      font-size: 1rem;
+      text-align: left;
+      letter-spacing: 0.5px;
+    }
+
+    @include mq() {
+      padding-top: 5.5rem;
+      letter-spacing: 0px;
+    }
+  }
+
+  .img {
+    position: absolute;
+    top: 7.5rem;
+    right: 0;
+    left: 43rem;
+    width: 33%;
+    margin: 0 auto;
+
+    img {
+      width: 100%;
+      height: auto;
+      margin: 0 auto;
+    }
+  }
+}
+
+.sec-circle {
+  background: url(#{$v-img-path}top/img_circle_bg.png) no-repeat right center/cover;
+
+  .inner {
+    @include mq(sp) {
+      padding: 6rem 3rem 1rem 3rem;
+    }
+
+    @include mq() {
+      padding: 9rem 0 0;
+      max-width: 140rem;
+    }
+  }
+
+  .sec-ttl {
+    color: $color01;
+    text-transform: capitalize;
+  }
+
+  .circle-list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 0 auto;
+
+    @include mq(sp) {
+      flex-wrap: wrap;
+      flex-direction: column;
+      width: 100%;
+      padding: 2rem 0;
+    }
+
+    @include mq() {
+      width: 86%;
+      padding: 7rem 0 0;
+    }
+  }
+
+  .circle-blk {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: $color06;
+    text-align: center;
+    border-radius: 50%;
+
+    @include mq(sp) {
+      width: 27rem;
+      margin-bottom: 5rem;
+      padding: 5rem 6rem 2rem;
+
+      &:last-of-type {
+        margin-bottom: 0;
+      }
+    }
+
+    @include mq() {
+      width: 28%;
+      height: 34rem;
+      margin-right: 8%;
+      margin-bottom: 5rem;
+      padding: 7rem 6rem;
+
+      &:last-of-type {
+        margin-right: 0;
+      }
+    }
+  }
+
+  .circle-icon {
+    display: block;
+
+    img {
+      height: auto;
+      max-width: 100%;
+    }
+  }
+
+  .circle-txt {
+    line-height: 2;
+    font-size: 1.8rem;
+    font-weight: 500;
+
+    @include mq() {
+      padding-top: 3rem;
+    }
+  }
+}
+
+.sec-work {
+  @include mq(sp) {
+    margin: 12rem 0 6rem;
+  }
+
+  @include mq() {
+    margin: 4rem 0 8rem;
+  }
+
+  .inner {
+    @include mq() {
+      max-width: 140rem;
+    }
+  }
+
+  .sec-ttl {
+    line-height: 1.7;
+
+    @include mq(sp) {
+      margin-bottom: 3.8rem;
+      font-size: 2.7rem;
+    }
+
+    @include mq() {
+      margin-bottom: 6rem;
+    }
+  }
+
+  .work-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+
+    @include mq(sp) {
+      width: 100%;
+    }
+
+    @include mq() {
+      width: 96%;
+    }
+  }
+
+  .work-detail {
+    border: 1px solid $color02;
+    font-weight: 600;
+    text-align: center;
+    border-radius: 1.5rem;
+
+    @include mq(sp) {
+      width: 100%;
+      margin-bottom: 2.6rem;
+      padding-bottom: 2rem;
+      font-size: 1.3rem;
+    }
+
+    @include mq() {
+      width: 30%;
+      margin-right: 5%;
+      margin-bottom: 5rem;
+      padding-bottom: 2rem;
+      font-size: 1.4rem;
+
+      &:nth-child(3n + 0) {
+        margin-right: 0;
+      }
+    }
+
+    .work-detail-list {
+      display: block;
+      text-decoration: none;
+
+      @include mq(sp) {
+        padding: 3rem 2rem 0;
+      }
+
+      @include mq() {
+        padding: 4rem 4rem 0;
+      }
+    }
+  }
+
+  .upper-blk {
+    border-bottom: 1px solid $color02;
+
+    @include mq(sp) {
+      padding-bottom: 1rem;
+    }
+
+    @include mq() {
+      padding-bottom: 1.5rem;
+    }
+
+    .img-list {
+      margin: 0 auto;
+
+      @include mq() {
+        width: 18rem;
+        height: 18rem;
+        margin: 0 auto;
+      }
+
+      @include mq(sp) {
+        width: 15rem;
+        height: 15rem;
+      }
+
+      img {
+        height: 100%;
+        border-radius: 50%;
+        max-width: 100%;
+        object-fit: cover;
+
+        @include mq(sp) {
+          max-width: 15rem;
+        }
+      }
+    }
+
+    .work-txt {
+      font-weight: 500;
+      text-align: left;
+      letter-spacing: 0.5px;
+
+      @include mq(sp) {
+        line-height: 2.2;
+      }
+
+      @include mq() {
+        line-height: 1.7;
+      }
+    }
+  }
+
+  .txt-list {
+    text-align: left;
+
+    @include mq(sp) {
+      padding: 2rem 0 1.4rem;
+    }
+
+    @include mq() {
+      padding: 2rem 0;
+    }
+
+    .list-detail {
+      display: flex;
+      align-items: center;
+
+      @include mq(sp) {
+        margin-bottom: 1.5rem;
+      }
+
+      @include mq() {
+        margin-bottom: 1.6rem;
+      }
+    }
+
+    .left-blk {
+      border: 1px solid $color03;
+      color: $color03;
+      text-align: center;
+      border-radius: 3rem;
+
+      @include mq(sp) {
+        width: 33%;
+        margin-right: 4.2rem;
+        padding: 0.6rem 0;
+      }
+
+      @include mq() {
+        width: 27%;
+        margin-right: 2rem;
+        padding: 0.7rem 0.5rem;
+      }
+    }
+
+    .right-blk {
+      letter-spacing: 0.5px;
+
+      @include mq(sp) {
+        width: 50%;
+      }
+    }
+  }
+
+  .btn-gp {
+    justify-content: center;
+
+    @include mq(sp) {
+      margin-top: 3rem;
+    }
+
+    @include mq() {
+      margin-top: 2rem;
+    }
+  }
+}
+
+.sec-column {
+  background-color: $color08;
+
+  .inner {
+    display: flex;
+    max-width: 140rem;
+
+    @include mq(sp) {
+      flex-direction: column;
+      justify-content: center;
+      padding: 6rem 0 6rem;
+    }
+
+    @include mq() {
+      justify-content: space-between;
+      padding: 8rem 0 6rem;
+    }
+  }
+
+  .left-column {
+    .sec-ttl {
+      line-height: 1.75;
+      padding: 0 3rem;
+
+      @include mq() {
+        text-align: left;
+      }
+    }
+
+    .btn {
+      padding: 1.7rem 3rem;
+    }
+  }
+
+  .view-btn {
+    @include mq(sp) {
+      width: 16rem;
+      margin: 0 auto;
+    }
+
+    @include mq() {
+      width: 15rem;
+      margin: 4rem auto;
+    }
+
+    a {
+      display: block;
+      color: $white;
+      text-align: center;
+      border-radius: 3rem;
+    }
+  }
+
+  .right-column {
+    display: flex;
+    flex-wrap: wrap;
+
+    @include mq(sp) {
+      width: 90%;
+      margin: 4rem auto 1rem;
+    }
+
+    @include mq() {
+      width: 77.5%;
+    }
+
+    .column-detail {
+      @include mq(sp) {
+        display: flex;
+        width: 100%;
+        // justify-content: space-between;
+        margin-bottom: 3rem;
+      }
+
+      @include mq() {
+        width: 30%;
+        margin-right: 4%;
+
+        &:nth-child(3n + 0) {
+          margin-right: 0;
+        }
+      }
+
+      .img {
+        overflow: hidden;
+
+        border-radius: 2rem;
+
+        @include mq(sp) {
+          height: 11.6rem;
+        }
+
+        @include mq() {
+          height: 21.1rem;
+        }
+
+        @include mq(sp) {
+          width: 100%;
+        }
+
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+
+          @include mq(sp) {
+            max-width: 17.5rem;
+          }
+
+          @include mq() {
+            max-width: 100%;
+          }
+        }
+      }
+
+      .col-txtblk {
+        @include mq(sp) {
+          width: 45%;
+          margin-left: 6%;
+        }
+      }
+    }
+
+    .img-blk {
+      @include mq(sp) {
+        display: flex;
+        justify-content: space-between;
+      }
+    }
+
+    .sub-ttl {
+      @include mq() {
+        text-transform: uppercase;
+      }
+    }
+
+    .column-txt {
+      @include mq(sp) {
+        height: 0;
+      }
+
+      @include mq() {
+        display: -webkit-box;
+        line-height: 1.3;
+        overflow: hidden;
+        font-size: 1.4rem;
+        font-weight: 500;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+      }
+    }
+
+    .column-btn {
+      @include mq(sp) {
+        width: 16rem;
+        padding: 1rem 0;
+        text-align: left;
+      }
+
+      @include mq() {
+        padding: 2.5rem 0;
+        text-align: right;
+      }
+
+      .category-button {
+        display: flex;
+        flex-direction: column;
+
+        @include mq(sp) {
+          width: 13rem;
+        }
+
+        @include mq() {
+          width: 13.5rem;
+          margin-left: auto;
+          text-align: right;
+        }
+
+        a {
+          text-align: center;
+          margin-bottom: 1.5rem;
+
+          @include mq() {
+            padding: 0.5rem 2rem;
+          }
+        }
+      }
+
+      .categorybutton {
+        margin-bottom: 1.5rem;
+      }
+
+      a {
+        display: inline-block;
+        background-color: $color09;
+        color: $color02;
+        font-weight: 500;
+        text-decoration: none;
+        border-radius: 3rem;
+
+        @include mq(sp) {
+          padding: 0.7rem 3rem;
+          font-size: 1.2rem;
+        }
+
+        @include mq() {
+          padding: 0.5rem 3.2rem;
+          font-size: 1.3rem;
+        }
+      }
+    }
+  }
+}
+
+.sec-faq {
+  @include mq(sp) {
+    margin-top: 6rem;
+    margin-bottom: 6rem;
+  }
+
+  @include mq() {
+    margin-top: 8rem;
+    margin-bottom: 8rem;
+  }
+
+  .inner {
+    @include mq() {
+      padding: 0 26rem;
+      max-width: 140rem;
+    }
+  }
+
+  .sec-ttl {
+    line-height: 1.8;
+  }
+
+  .accor-blk {
+    @include mq(sp) {
+      padding-top: 3.9rem;
+    }
+
+    @include mq() {
+      padding-top: 6.5rem;
+    }
+  }
+
+  .accor-list {
+    border-bottom: 1px solid $color02;
+
+    @include mq(sp) {
+      margin-bottom: 2.1rem;
+      padding-bottom: 1.6rem;
+    }
+
+    @include mq() {
+      margin-bottom: 2rem;
+      padding-bottom: 1.65rem;
+    }
+
+    .question {
+      display: flex;
+      align-items: center;
+
+      .qes {
+        color: $color02;
+        font-weight: 500;
+
+        @include mq(sp) {
+          width: 15%;
+          margin-right: 1rem;
+          font-size: 2.2rem;
+        }
+
+        @include mq() {
+          width: 7%;
+          font-size: 2.8rem;
+          text-align: center;
+        }
+      }
+
+      .accor-txt {
+        font-weight: 500;
+
+        @include mq(sp) {
+          width: 90%;
+          line-height: 1.55;
+          font-size: 1.4rem;
+          letter-spacing: -0.5px;
+        }
+
+        @include mq() {
+          width: 85%;
+          margin-right: 2rem;
+          margin-left: 2rem;
+          font-size: 1.6rem;
+          letter-spacing: 0.6px;
+        }
+      }
+
+      .addButton {
+        position: relative;
+        margin: 0 0 1px 0;
+        border: 1px solid $color09;
+        cursor: pointer;
+        border-radius: 50%;
+
+        @include mq(sp) {
+          width: 2.98rem;
+          height: 2.5rem;
+          margin-left: 2rem;
+
+          &:before {
+            right: 11px;
+            width: 1px;
+            height: 10px;
+            margin-top: -5px;
+          }
+
+          &:after {
+            right: 6.6px;
+            width: 10px;
+            height: 1px;
+            margin-top: -1px;
+          }
+        }
+
+        @include mq() {
+          width: 3rem;
+          height: 3rem;
+
+          &:before {
+            right: 13px;
+            width: 1px;
+            height: 10px;
+            margin-top: -5px;
+          }
+
+          &:after {
+            right: 8.6px;
+            width: 10px;
+            height: 1px;
+            margin-top: 0px;
+          }
+        }
+
+        &:before,
+        &:after {
+          position: absolute;
+          top: 50%;
+          background-color: $color09;
+          content: '';
+          transition: all 0.3s;
+        }
+      }
+    }
+
+    .question.active {
+      .addButton {
+        &::before {
+          height: 0;
+        }
+
+        &::after {
+          margin-top: 0;
+        }
+      }
+    }
+
+    .content {
+      display: none;
+      margin: 0 auto;
+      font-weight: 500;
+
+      @include mq(sp) {
+        width: 75%;
+        padding: 2.1rem 1.6rem 1.1rem 1rem;
+        font-size: 1.3rem;
+      }
+
+      @include mq() {
+        width: 82%;
+        padding: 2.1rem 0 0 0;
+        font-size: 1.5rem;
+      }
+    }
+  }
+}

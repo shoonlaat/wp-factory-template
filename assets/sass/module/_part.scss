@@ -1,0 +1,298 @@
+/* ========================================================
+ common parts styles
+======================================================== */
+.btn-gp{
+	display: flex;
+	justify-content: space-between;
+	a{
+		border-radius: 3rem;
+	  color: $white;
+  }
+}
+.inquiry{
+	background: $color02;
+	@include mq(sp){
+		font-size: 1.4rem;
+	}
+	@include mq{
+		font-size: 1.6rem;
+	}
+  span{
+		@include mq(sp){
+			padding-left: 2.3rem;
+		}
+		@include mq{
+      padding-left: 3.3rem;
+		}
+		&::before{
+			background: url(#{$v-img-path}icon/icon_email.png);
+		}
+	}
+
+}
+.phno{
+	background: $color03;
+  span{
+		@include mq(sp){
+			padding-left: 2.3rem;
+			font-size: 1.7rem;
+		}
+	  @include mq{
+			padding-left: 2.9rem;
+			letter-spacing: 0.2rem;
+			font-size: 2rem;
+		}
+		&::before{
+			background: url(#{$v-img-path}icon/icon_phone.png);
+		}
+	}
+}
+
+/*common-title*/
+.sec-ttl{
+	font-weight: 600;
+	text-align: center;
+	text-transform: uppercase;
+	color: $color02;
+	@include mq(sp){
+		font-size: 2.5rem;
+	}
+	@include mq{
+		font-size: 3.2rem;
+	}
+}
+
+/*common-button*/
+.btn{
+		@include mq(sp){
+			padding: 1.3rem 3.65rem;
+		}
+		@include mq(){
+			padding: 1.25rem 5rem 1.5rem;
+		}
+}
+
+/*sub-menu*/
+.sub-menu{
+	color: $color03;
+	display: block;
+	@include mq(sp){
+		font-size: 1.4rem;
+	}
+	@include mq{
+		font-size: 1.6rem;
+	}
+}
+
+.sub-ttl{
+	color: $color02;
+	letter-spacing: 0.5px;
+	@include mq(sp){
+		font-size: 1.5rem;
+		padding: 2rem 0;
+	}
+	@include mq{
+		font-size: 1.6rem;
+		padding: 2.8rem 0 3.2rem;
+	}
+}
+
+.tags-list{
+	display: flex;
+	align-items: center;
+	padding:0 4rem;
+	.tag-detail{
+		color: $color02;
+		position: relative;
+		&:before{
+			content: '#';
+		}
+		&:after{
+			content: ',';
+		}
+		&:last-child::after{
+			content: '';
+		}
+	}
+}
+
+.tabs {
+	.tabs-nav {
+		display: flex;
+		justify-content: space-between;
+		background-color: $color08;
+		@include mq(sp) {
+			flex-direction: column;
+		}
+
+		@include mq() {
+			padding: 0 13.5%;
+		}
+
+		li {
+			@include mq(sp) {
+				width: 100%;
+				border-bottom: 1px solid $white;
+			}
+
+			@include mq() {
+				width: 25%;
+				border-left: 1px solid $white;
+			}
+
+			a {
+				font-weight: 600;
+				display: block;
+				text-align: center;
+				color: $color02;
+				position: relative;
+				&.js-active{
+					background-color: $color08;
+					color: $white;
+				}
+
+				@include mq(sp) {
+					font-size: 1.6rem;
+					padding: 2rem 0 2rem;
+				}
+
+				@include mq() {
+					font-size: 2rem;
+					padding: 2rem 0 6rem;
+				}
+
+				&:before {
+					content: '';
+					background: url(#{$v-img-path}icon/icon_arr.png) no-repeat center/cover;
+					width: 2.1rem;
+					height: 1.1rem;
+					position: absolute;
+
+					@include mq(sp) {
+						right: 8%;
+						top: 50%;
+						transform: translateY(-50%);
+					}
+
+					@include mq() {
+						left: 50%;
+						top: 72%;
+						transform: translate(-50%, -50%);
+					}
+				}
+
+				&.js-active {
+					background-color: $color04;
+					color: $white;
+				}
+			}
+
+			&:last-child {
+				@include mq() {
+					border-right: 1px solid $white;
+				}
+			}
+		}
+	}
+
+	.category {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: flex-start;
+
+		@include mq(sp) {
+			width: 90%;
+			margin: 5rem auto;
+			justify-content: space-between;
+		}
+
+		@include mq() {
+			width: 70%;
+			margin: 10rem auto;
+		}
+
+		.category-list {
+			@include mq(sp) {
+				width: 48%;
+				margin-bottom: 5rem;
+			}
+
+			@include mq() {
+				margin-bottom: 5rem;
+				width: 29%;
+				margin-right: 5rem;
+				&:nth-child(3n+0){
+					margin-right: 0;
+				}
+			}
+
+			img {
+				max-width: 100%;
+				height: auto;
+			}
+		}
+
+		a {
+			display: block;
+		}
+	}
+
+	.category-list-ttl {
+		font-weight: 600;
+
+		@include mq(sp) {
+			font-size: 1.4rem;
+			padding: 2rem 0;
+		}
+
+		@include mq() {
+			font-size: 1.6rem;
+			color: $color09;
+			padding: 2.2rem 0;
+		}
+	}
+
+	.archive-txt {
+		display: -webkit-box;
+		-webkit-line-clamp: 2;
+		-webkit-box-orient: vertical;  
+		 overflow: hidden;
+		@include mq(sp) {
+			font-size: 1.2rem;
+			margin-bottom: 1.2rem;
+		}
+
+		@include mq() {
+			font-size: 1.4rem;
+			line-height: 1.9;
+			margin-bottom: 1.3rem;
+		}
+	}
+
+	.category-btn-blk {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+
+		@include mq(sp) {
+			flex-direction: column;
+			row-gap: 1rem;
+		}
+
+		.category-btn {
+			margin:0 0 0 auto;
+		}
+	}
+
+	.tags {
+		color: $color02;
+
+		@include mq(sp) {
+			font-size: 1.4rem;
+		}
+
+		@include mq() {
+			font-size: 2rem;
+		}
+	}
+}

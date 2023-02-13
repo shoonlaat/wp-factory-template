@@ -1,0 +1,503 @@
+/* ========================================================
+ styles for page
+======================================================== */
+.sec-mv {
+  @include mq(sp) {
+    padding: 4rem 0 4rem;
+  }
+
+  @include mq() {
+    padding: 15rem 0 15rem;
+  }
+
+  .inner {
+    margin: 0 auto;
+
+    @include mq() {
+      padding: 0 3rem;
+      max-width: 140rem;
+    }
+  }
+
+  .mv-ttl {
+    font-weight: 600;
+    line-height: 1.8;
+    color: $white;
+    text-transform: uppercase;
+
+    @include mq() {
+      font-size: 3.6rem;
+    }
+
+    span {
+      color: $color10;
+      display: block;
+
+      @include mq() {
+        font-size: 1.8rem;
+      }
+    }
+  }
+}
+
+.sec-mv.work-mv {
+  background: url(#{$v-img-path}shared/img_column_bg.jpg) no-repeat center/cover;
+}
+
+.sec-mv.column-mv {
+  background: url(#{$v-img-path}shared/img_category_bg.png) no-repeat center/cover;
+}
+
+.sec-mv.not-mv {
+  background: url(#{$v-img-path}shared/img_error_bg.jpg) no-repeat center/cover;
+}
+
+.page-work {
+  .tags-list {
+    justify-content: flex-end;
+  }
+
+  .work-ttl {
+    font-weight: 600;
+    color: $color02;
+    letter-spacing: 1.5px;
+
+    @include mq(sp) {
+      font-size: 1.5rem;
+      padding: 2rem 0;
+    }
+
+    @include mq() {
+      font-size: 2.2rem;
+      padding-bottom: 4.5rem;
+    }
+  }
+
+  .work-txt {
+    line-height: 1.9;
+
+    @include mq(sp) {
+      font-size: 0;
+    }
+  }
+
+  .txt-list {
+    text-align: left;
+
+    @include mq(sp) {
+      padding: 2rem 0 1.4rem;
+      font-size: 1.3rem;
+    }
+
+    @include mq() {
+      padding: 4.5rem 0 0;
+      font-size: 1.4rem;
+    }
+
+    .list-detail {
+      display: flex;
+      align-items: center;
+
+      @include mq(sp) {
+        margin-bottom: 1.5rem;
+      }
+
+      @include mq() {
+        margin-bottom: 1.6rem;
+      }
+    }
+
+    .left-blk {
+      border: 1px solid $color03;
+      color: $color03;
+      text-align: center;
+      border-radius: 3rem;
+
+      @include mq(sp) {
+        width: 15rem;
+        padding: 0.6rem 0;
+        margin-right: 2.2rem;
+      }
+
+      @include mq() {
+        width: 9rem;
+        padding: 0.7rem 0.5rem;
+        margin-right: 2rem;
+      }
+    }
+
+    .right-blk {
+      letter-spacing: 0.5px;
+
+      @include mq(sp) {
+        width: 50%;
+      }
+
+      @include mq() {
+        margin-left: 0;
+      }
+    }
+  }
+
+  .inner {
+    @include mq(sp) {
+      padding: 0 3rem;
+    }
+
+    @include mq() {
+      max-width: 140rem;
+    }
+  }
+
+  .work-list {
+    margin: 10rem auto;
+
+    @include mq(sp) {
+      width: 100%;
+    }
+
+    @include mq() {
+      width: 79%;
+    }
+
+    .work-detail {
+      border: 1px solid $color02;
+      border-radius: 1.5rem;
+
+      @include mq(sp) {
+        padding: 3rem;
+        margin-bottom: 4rem;
+        text-align: center;
+      }
+
+      @include mq() {
+        padding: 6rem 7rem 4.5rem;
+        margin-bottom: 6rem;
+      }
+
+      .work-detail-list {
+        text-decoration: none;
+        display: flex;
+
+        @include mq(sp) {
+          flex-direction: column;
+        }
+      }
+    }
+
+    .img-list {
+      img {
+        border-radius: 50%;
+        object-fit: cover;
+
+        @include mq(sp) {
+          max-width: 15rem;
+          height: 15rem;
+        }
+
+        @include mq() {
+          max-width: 35.7rem;
+          height: 35.7rem;
+        }
+      }
+    }
+
+    .right-blk {
+      @include mq(sp) {
+        width: 100%;
+      }
+
+      @include mq() {
+        width: 56%;
+        margin-left: 7rem;
+      }
+    }
+  }
+
+  .work-detail-blk {
+    @include mq(sp) {
+      width: 90%;
+      margin: 5rem auto;
+    }
+
+    @include mq() {
+      width: 64%;
+      margin: 11rem auto;
+    }
+
+    .img-blk {
+      @include mq() {
+        padding-bottom: 4.5rem;
+      }
+
+      img {
+        max-width: 100%;
+        height: auto;
+      }
+    }
+
+    .work-ttl {
+      text-align: center;
+    }
+
+    .work-txt {
+      @include mq() {
+        padding: 0 9rem;
+      }
+    }
+
+    .txt-list {
+      border: 1px solid #fd5e5e;
+
+      @include mq() {
+        width: 51.9rem;
+        margin: 2rem auto;
+        padding: 4rem 0 2rem;
+      }
+
+      .list-detail {
+        @include mq(sp) {
+          padding-left: 2rem;
+          padding-right: 2rem;
+        }
+
+        @include mq() {
+          padding-left: 4rem;
+        }
+      }
+    }
+
+    .txt-blk {
+      @include mq(sp) {
+        padding-top: 5rem;
+      }
+
+      @include mq() {
+        padding-top: 6.2rem;
+      }
+
+      .worklist-subttl {
+        color: $color02;
+        font-weight: 600;
+        position: relative;
+
+        @include mq(sp) {
+          padding-left: 3rem;
+          font-size: 1.5rem;
+        }
+
+        @include mq() {
+          padding-left: 6rem;
+        }
+
+        &::before {
+          content: '';
+          border-bottom: 1px solid $color02;
+          position: absolute;
+          top: 50%;
+          left: 0;
+
+          @include mq(sp) {
+            width: 2rem;
+          }
+
+          @include mq() {
+            width: 4rem;
+          }
+        }
+
+        @include mq() {
+          font-size: 2rem;
+        }
+      }
+
+      .worklist-txt {
+        font-weight: 500;
+
+        @include mq(sp) {
+          padding-top: 2.8rem;
+          font-size: 1.4rem;
+        }
+
+        @include mq() {
+          font-size: 1.6rem;
+          padding-top: 3.8rem;
+          line-height: 1.5;
+        }
+      }
+    }
+  }
+}
+
+.page-column {
+  .inner {
+    @include mq(sp) {
+      padding: 5rem 2rem;
+    }
+
+    @include mq {
+      max-width: 90rem;
+      margin: 0 auto;
+      padding: 11rem 0px;
+    }
+  }
+
+  .column-img-blk {
+    padding-bottom: 3rem;
+
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+  }
+
+  .category-btn {
+    width: 13rem;
+    margin: 0 auto;
+
+    .category-button {
+      a {
+        border: 1px solid $color02;
+        border-radius: 3rem;
+        margin-bottom: 1rem;
+      }
+    }
+
+    .categorybutton {
+      border: 1px solid $color02;
+      border-radius: 3rem;
+      margin-bottom: 1rem;
+    }
+
+    a {
+      font-size: 1.3rem;
+      font-weight: 500;
+      text-decoration: none;
+      text-align: center;
+      display: block;
+      padding: 0.9rem 0;
+      color: $color02;
+    }
+  }
+
+  .category-ttl {
+    text-align: center;
+
+    @include mq(sp) {
+      font-size: 1.6rem;
+      padding: 4.5rem 0 4rem;
+    }
+
+    @include mq() {
+      font-size: 2.5rem;
+      padding: 5.5rem 0 5rem;
+    }
+  }
+
+  .column-txt {
+    @include mq(sp) {
+      font-size: 1.4rem;
+    }
+
+    @include mq() {
+      font-size: 1.6rem;
+    }
+  }
+  .tabs{
+   .related-list{
+    width: 100%;
+    margin:0rem 0 5rem;
+   }
+  }
+}
+
+.not-found {
+  .inner {
+    @include mq(sp) {
+      padding: 5rem 3rem;
+      font-size: 1.4rem;
+    }
+
+    @include mq() {
+      max-width: 900rem;
+      width: 70%;
+      margin: 0 auto;
+      padding: 20rem 0;
+      font-size: 1.6rem;
+    }
+  }
+
+  .error-msg {
+    font-weight: 500;
+    text-align: center;
+    line-height: 1.5;
+    padding-bottom: 5rem;
+  }
+
+  .btn-gp {
+    text-align: center;
+    margin: 0 auto;
+    justify-content: center;
+    width: 18.4rem;
+  }
+
+  .page {
+    background-color: $color03;
+    padding: 1rem 1.5rem;
+    display: inline-block;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+}
+
+.single-column {
+  @include mq(sp) {
+    margin: 5rem auto;
+  }
+
+  @include mq() {
+    margin: 11rem auto 0rem;
+  }
+}
+.search-detail{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  .search-list{
+    border: 1px solid $color02;
+    border-radius: 3rem;
+    padding:4rem;
+    @include mq(sp){
+      width: 100%;
+      margin-bottom: 4rem;
+    }
+    @include mq(){
+      width: 30%;
+      margin-right: 4rem;
+      margin-bottom: 4rem;
+    }
+    &:nth-child(3n+0){
+      margin-right: 0;
+    }
+  }
+  .search-title{
+    display: block;
+    text-align: center;
+    font-size: 1.6rem;
+    padding-bottom: 4rem;
+    font-weight: 700;
+  }
+  .search-image{
+    margin:0 auto;
+    width: 50%;
+    text-align: center;
+    img{
+      max-width: 100%;
+      height: 100%;
+      @include mq(){
+        max-height: 50rem;
+      }
+    }
+  }
+
+}

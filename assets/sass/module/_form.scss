@@ -1,0 +1,196 @@
+/* ========================================================
+form
+======================================================== */
+.sec-mv.contact-mv {
+  background: url(#{$v-img-path}shared/img_contact_bg.jpg) no-repeat center/cover;
+}
+
+.contact-blk {
+  .contact-content {
+    @include mq(sp) {
+      width: 100%;
+      padding: 5rem 0;
+    }
+
+    @include mq() {
+      width: 79%;
+      margin: 0 auto;
+      padding: 10rem 0;
+    }
+  }
+
+  .contact-ttl {
+    text-align: center;
+
+    @include mq(sp) {
+      font-size: 1.4rem;
+    }
+
+    @include mq() {
+      font-size: 1.6rem;
+      font-weight: 500;
+    }
+  }
+
+  .contact-form {
+    margin-top: 5rem;
+
+    @include mq() {
+      padding: 0 3rem;
+    }
+
+    .required {
+      color: $color03;
+			@include mq(sp){
+				font-size: 1.2rem;
+			}
+			@include mq(){
+				font-size: 1.4rem;
+			}
+    }
+
+    .contact-form-gp {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 3rem;
+			word-break: break-word;
+      .wpcf7-form-control-wrap {
+        width: 70%;
+      }
+
+      .contact-label {
+        width: 50%;
+        font-weight: 500;
+
+        @include mq(sp) {
+          font-size: 1.3rem;
+        }
+
+        @include mq() {
+          font-size: 1.6rem;
+        }
+      }
+
+      .contact-input {
+        width: 73%;
+        padding: 0.5rem 1rem;
+        outline: none;
+      }
+
+      .message {
+        resize: none;
+        height: 10rem;
+      }
+    }
+    .check-box {
+      font-weight: 500;
+      padding: 2rem 0;
+      text-align: center;
+
+      @include mq(sp) {
+        display: block;
+        font-size: 1.4rem;
+      }
+
+      @include mq() {
+        font-size: 1.6rem;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+      }
+
+      label {
+        display: flex;
+        justify-content: center;
+        flex-direction: row-reverse;
+        align-items: center;
+      }
+    }
+
+    .contact-btn {
+      width: 23.5rem;
+      margin: 0 auto;
+
+      @include mq(sp) {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+      }
+    }
+
+    .send {
+      border-radius: 3rem;
+      color: $white;
+      background-color: $color03;
+      outline: none;
+      border: 1px solid transparent;
+      text-align: center;
+      padding: 1.5rem 1.5rem;
+      font-weight: 600;
+      opacity: 0.7;
+      &.active{
+        opacity: 1;
+      }
+
+      @include mq(sp) {
+        font-size: 1.4rem;
+      }
+
+      @include mq() {
+        font-size: 1.6rem;
+      }
+    }
+
+    .contact-box {
+      border: 1px solid $color09;
+      padding: 2rem 2rem;
+
+      .contact-box-ttl {
+        font-weight: 600;
+        text-align: center;
+        color: $color02;
+
+        @include mq(sp) {
+          font-size: 1.8rem;
+        }
+
+        @include mq() {
+          font-size: 2rem;
+        }
+      }
+
+      .person-txt {
+        font-weight: 500;
+        padding: 3rem 0;
+
+        @include mq(sp) {
+          font-size: 1.3rem;
+        }
+
+        @include mq() {
+          font-size: 1.5rem;
+        }
+      }
+
+      .contact-txt-blk {
+        .ttl {
+          font-weight: 600;
+
+          @include mq(sp) {
+            font-size: 1.5rem;
+          }
+
+          @include mq() {
+            font-size: 1.7rem;
+          }
+        }
+      }
+    }
+
+  }
+}
+
+// .wpcf7 span.wpcf7-not-valid-tip {
+//   display: none !important;
+// }
